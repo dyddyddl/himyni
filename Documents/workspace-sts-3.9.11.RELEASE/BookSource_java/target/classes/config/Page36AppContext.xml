@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="page36.x.y.Bar"  id="bar"/>
+	<bean class="page36.x.y.Baz"  id="baz"/>
+	<bean class="page36.Foo" id="fooId"
+		p:bar-ref="bar">
+		<lookup-method name="getBar" bean="bar"/>
+		<property name="bar">
+		<ref bean="bar"/>
+		 </property>
+		<constructor-arg>
+			<ref bean="bar"/>
+		</constructor-arg>
+		<constructor-arg ref="baz"/>
+	</bean>
+	<bean class="page36.Foo" id="foo"
+		p:email="heojk@daum.net">
+		<property name="bar">
+		<bean class="Bar"/>
+		</property>
+		</bean>
+		
+</beans>

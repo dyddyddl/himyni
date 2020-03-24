@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!--  bean의 scope 확인 예  -->
+	<bean id = "greeting" 
+		class="com.book.page55.singleton.GreetingServiceImpl"
+		scope = "prototype"> 
+		<!--  생략하면 싱글턴으로 인식  -->
+		<property name="greeting" value="Hello"></property>
+	</bean>
+	<bean id = "greeting2" 
+		class="com.book.page55.singleton.GreetingServiceImpl"
+		scope = "prototype"> 
+		<!--  생략하면 싱글턴으로 인식  -->
+		<property name="greeting" value="Hello"></property>
+	</bean>
+</beans>

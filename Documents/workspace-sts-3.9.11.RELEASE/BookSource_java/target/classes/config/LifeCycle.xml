@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd"
+		xmlns:p = "http://www.springframework.org/schema/p">
+	<bean id = "after" class="LifeCycle.afterPropertiesSet">
+	<property name = "afterPropertiesSet">
+	<bean class = "afterPropertiesSet"/>
+	</property>
+	</bean>
+	<bean id = "destroy" class="LifeCycle.destroy">
+	<property name = "destroy">
+	<bean class = "destroy"/>
+	</property>
+	</bean>
+	<bean id = "setBeanFactory" class="LifeCycle.setBeanFactory">
+	<property name = "setBeanFactory">
+	<bean class = "setBeanFactory"/>
+	</property>
+	</bean>
+	<bean id = "setBeanName" class="LifeCycle.setBeanName">
+	<property name = "setBeanName">
+	<bean class = "setBeanName"/>
+	</property>
+	</bean>
+</beans>
