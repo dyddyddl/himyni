@@ -7,5 +7,6 @@ public interface GreetingService {
 	void sayGoodbye(String name);
 	void goodbyeSay(String name);
 	//index
+	//commit
 	void my_calc(int num1, int num2);
 }
