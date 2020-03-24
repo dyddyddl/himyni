@@ -13,6 +13,9 @@
 	<bean id="userDao2" class="com.book.page132.ProductDAOImpl2"
 	 	p:dataSource-ref="dataSource"/>
 </beans>
+<!-- bean 설정 id = " dataSource
+	class = ~
+	p:  -->
 
 
 

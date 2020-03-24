@@ -1,9 +1,9 @@
-package com.book.page132;
+package com.book.page174;
+
 public class Product {
 	private int id;
 	private String name;
 	private int price;
-	
 	public int getId() {
 		return id;
 	}
@@ -26,6 +26,5 @@ public class Product {
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
 	}
-
 	
 }
